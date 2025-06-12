@@ -13,7 +13,7 @@ app.listen(port, function () {
 // Подключение политики cors, запрещающей подключение к сайту с разным портов.
 let cors = require('cors')
 app.use(cors({
-    origin: ["http://localhost:5173", "https://www.navigamingclub.ru/", "https://navigamingclub.ru/"], 
+    origin: ["http://localhost:5173", "https://www.navigamingclub.ru", "https://navigamingclub.ru"], 
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     credentials: true // Разрешаем передачу cookie
 }));  
